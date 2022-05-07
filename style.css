@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: jost-regular;
+    src: url(font/Jost/static/Jost-Regular.ttf);
+}
+
+@font-face {
+    font-family: insta;
+    src: url(font/FontsFree-Net-Billabong.ttf);
+}
+
+@media only screen and (max-width: 900px) {
+    aside.imagem {
+        display: none !important;
+    }
+
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    aside.login {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    footer {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    footer {
+        width: 400px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #FAFAFA;
+    max-width: 100vw;
+    height: 120vh;
+
+    position: relative;
+}
+
+main {
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 740px;
+    height: 660px;
+}
+
+aside.imagem {
+    background-color: #FAFAFA;
+    width: 350px;
+    height: 550px;
+    float: left;
+
+    margin-top: 6%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+#img1 {
+    width: 270px;
+    z-index: 1;
+    position: absolute;
+    right: 150px;
+}
+
+#img2 {
+    width: 270px;
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+
+}
+
+aside.login {
+    margin-top: 6%;
+    max-width: 350px;
+    height: 90vh;
+    float: right;
+
+
+}
+
+.formulario {
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    padding: 30px;
+
+}
+
+.titulo h1 {
+    font-family: insta;
+    font-size: 55px;
+    text-align: center;
+
+}
+
+fieldset {
+    border: none;
+    width: 173px;
+
+    margin-top: 25px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+.email input, .senha input {
+    width: 260px;
+    height: 40px;
+    background-color: #FAFAFA;
+    padding: 5px;
+
+
+    border: 1px solid rgba(128, 128, 128, 0.418);
+    border-radius: 3px;
+    outline: none;
+}
+
+
+.senha {
+    margin-top: 5px;
+}
+
+.botao {
+    width: 260px;
+    
+    margin-top: 15px;
+    margin-left: auto; 
+    margin-right: auto;
+    
+}
+
+
+.botao input {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    
+    width: 260px;
+    height: 30px;
+    background-color: #2ba2f1;
+    color: white;
+
+}
+
+.ou {
+    text-align: center;
+    font-family: poppins-regular;
+    font-size: 13px;
+    color: gray;
+
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ou p {
+    margin: 0 15px;
+}
+
+.ou hr {
+    width: 105px;
+    opacity: 0.5;
+}
+
+.facebook {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook a {
+    text-decoration: none;
+    color: #385185;
+    font-family: poppins-regular;
+    font-size: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook img {
+    width: 18px;
+    margin-right: 5px;
+
+}
+
+.esqueceu-senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 15px;
+
+}
+
+.esqueceu-senha a {
+    font-family: poppins-regular;
+    text-decoration: none;
+    color: #385185;
+    font-size: 12px;
+}
+
+.cadastre {
+    margin-top: 13px;
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.418);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: poppins-regular;
+    font-size: 13px;
+}
+
+.cadastre a {
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #0098F7;
+}
+
+
+
+.obtenha-app p {
+    margin-top: 18px;
+    font-family: poppins-regular;
+    text-align: center;
+    font-size: 13px;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+
+}
+
+.app img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#playstore {
+    width: 150px;
+}
+
+#appstore {
+    width: 145px;
+}
+
+
+.cont-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: gray;
+    font-size: 13px;
+    font-family: jost-regular;
+    text-align: center;
+}
+
+
+.p2 {
+    margin-top: 10px;
+    
+}
+
+.p3 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer select {
+    margin-right: 25px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color: gray;
+}
